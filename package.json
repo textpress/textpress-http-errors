@@ -1,0 +1,43 @@
+{
+    "name": "@textpress/textpress-http-errors",
+    "version": "0.0.0",
+    "main": "lib/index.js",
+    "repository": "git@github.com:textpress/textpress-http-errors.git",
+    "scripts": {
+        "test": "jest --coverage --colors",
+        "test-update-snapshots": "jest -u",
+        "bump": "gulp bump --part",
+        "build": "yarn build:clean && yarn build:lib && yarn build:docs",
+        "build:clean": "rimraf lib",
+        "build:lib": "babel -d lib src -s --ignore '**/__tests__/**'",
+        "build:docs": "esdoc",
+        "ci-test": "jest",
+        "ci-build": "yarn build",
+        "ci-release-notes": "conventional-github-releaser -p eslint"
+    },
+    "jest": {
+        "coverageDirectory": "<rootDir>/.jest-coverage",
+        "testEnvironment": "node",
+        "testMatch": [
+            "**/__tests__/**/*.test.js"
+        ]
+    },
+    "peerDependencies": {
+        "@textpress/extendable-error": "*"
+    },
+    "devDependencies": {
+        "@textpress/babel-preset-textpress": "*",
+        "@textpress/eslint-config-textpress": "*",
+        "@textpress/extendable-error": "*",
+        "@textpress/gulp-bump-version": "*",
+        "conventional-github-releaser": "^2.0.0",
+        "esdoc": "^1.0.4",
+        "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+        "esdoc-standard-plugin": "^1.0.0",
+        "eslint": "^4.9.0",
+        "flow-bin": "^0.59.0",
+        "jest": "^21.2.1",
+        "jest-cli": "^21.2.1",
+        "rimraf": "^2.6.2"
+    }
+}
