@@ -11,7 +11,7 @@
         "build:clean": "rimraf lib",
         "build:lib": "babel -d lib src -s --ignore '**/__tests__/**'",
         "build:docs": "esdoc",
-        "ci-test": "jest",
+        "ci-test": "true",
         "ci-build": "yarn build",
         "ci-release-notes": "conventional-github-releaser -p eslint"
     },
