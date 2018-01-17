@@ -1,6 +1,6 @@
 {
     "name": "@textpress/textpress-http-errors",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "main": "lib/index.js",
     "repository": "git@github.com:textpress/textpress-http-errors.git",
     "scripts": {
