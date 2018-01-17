@@ -2,7 +2,7 @@
 
 import { HTTPError } from "./http";
 
-export class NotFound extends HTTPError {
+export class NotFoundError extends HTTPError {
     constructor( message, extra ) {
         super( 404, message || "Not Found", extra );
     }
