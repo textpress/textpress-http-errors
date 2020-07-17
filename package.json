@@ -43,7 +43,7 @@
         "gulp-print": "5.0.2",
         "jest": "^22.0.5",
         "jest-cli": "^22.0.5",
-        "lodash": "^4.17.5",
+        "lodash": "^4.17.19",
         "plugin-error": "^1.0.1",
         "rimraf": "^2.6.2",
         "yargs": "15.1.0"
